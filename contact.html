@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact Aarambh Academy Jaipur for course counselling.">
+
+    <title>Contact | Aarambh Academy Jaipur</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                Aarambh<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Courses</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="contact.html">Contact</a>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    ◐
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Let's Talk
+                </span>
+
+                <h1>Start your learning journey.</h1>
+
+                <p>
+                    Send an enquiry or visit our Jaipur center
+                    for a free counselling session.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container contact-grid">
+
+
+                <div class="contact-card">
+
+                    <h2>Enquiry Form</h2>
+
+                    <p class="form-help">
+                        Fields marked * are required.
+                    </p>
+
+
+                    <form id="contactForm" novalidate>
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full Name *
+                            </label>
+
+                            <input id="name" name="name" type="text" autocomplete="name" required
+                                placeholder="Your name">
+
+                            <p class="error" data-error-for="name"></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+
+                            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                                pattern="[0-9+\-\s]{10,15}" required placeholder="98765 43210">
+
+                            <p class="error" data-error-for="phone"></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="service">
+                                Course *
+                            </label>
+
+                            <select id="service" name="service" required>
+
+                                <option value="">
+                                    Select a course
+                                </option>
+
+                                <option>
+                                    Foundation
+                                </option>
+
+                                <option>
+                                    Board Mastery
+                                </option>
+
+                                <option>
+                                    Exam Prep
+                                </option>
+
+                                <option>
+                                    Computer Skills
+                                </option>
+
+                            </select>
+
+                            <p class="error" data-error-for="service"></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message *
+                            </label>
+
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us what you want to learn..."></textarea>
+
+                            <p class="error" data-error-for="message"></p>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            Send Enquiry
+                        </button>
+
+
+                        <p id="formStatus" role="status" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+
+                <div class="contact-info">
+
+
+                    <article class="info-card">
+
+                        <h2>Visit Us</h2>
+
+                        <address>
+
+                            Aarambh Academy<br>
+
+                            21, Vaishali Nagar<br>
+
+                            Jaipur, Rajasthan 302021
+
+                        </address>
+
+
+                        <p>
+
+                            <strong>Phone:</strong>
+
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>Email:</strong>
+
+                            <a href="mailto:hello@aarambhacademy.example">
+                                hello@aarambhacademy.example
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <h2>Business Hours</h2>
+
+                        <div class="hours-row">
+
+                            <span>Monday - Saturday</span>
+
+                            <strong>8:00 AM - 8:00 PM</strong>
+
+                        </div>
+
+                        <div class="hours-row">
+
+                            <span>Sunday</span>
+
+                            <strong>10:00 AM - 2:00 PM</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="map-wrapper">
+
+                        <iframe title="Map showing Vaishali Nagar Jaipur"
+                            src="https://www.google.com/maps?q=Vaishali%20Nagar%20Jaipur%20Rajasthan&output=embed"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="copyright">
+            © 2026 Aarambh Academy Jaipur.
+        </div>
+
+    </footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
